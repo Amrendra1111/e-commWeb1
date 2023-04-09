@@ -1,0 +1,392 @@
+*{
+
+ box-sizing: border-box;
+}
+html{
+ scroll-behavior: smooth;
+ scroll-padding-top: calc(100% - 80px);
+
+}
+body{
+ margin: 0;
+ padding: 0;
+ 
+
+}
+
+
+/* ******************************************card style here*************************************** */
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display:flex;
+  justify-content: space-around;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+ .card{
+
+  width: 280px;
+	height: 360px;
+	border-radius: 15px;
+	padding: 1.5rem;
+	background: white;
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.4s ease-out;
+	box-shadow: 0px 7px 10px rgba(black, 0.5);
+
+}
+.card:hover{
+  transform: translateY(20px);
+
+}
+.card:before{
+  opacity: 1;
+}
+.card .info:hover{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.card:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(black, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+  }
+ .card-img{
+	width: 100%;
+		height: 100%;
+		object-fit: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border-radius: 15px;
+}
+.info{
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s;
+}
+
+@media(max-width:720px){
+  .info{
+    display: none;
+  }
+}
+
+
+
+.heading{
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+p
+{
+    letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+  button{
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+  
+  }
+
+  .card:hover{
+    background: dodgerblue;
+    color: white;
+  }
+
+.about{
+  padding: 30px;
+  background: aliceblue;
+}
+/* ***************************FOOTER SECTION******************** */
+
+
+
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+background: #151414;
+position: relative;
+}
+.footer-cta {
+border-bottom: 1px solid #373636;
+}
+.single-cta i {
+color: #ff5e14;
+font-size: 30px;
+float: left;
+margin-top: 8px;
+}
+.cta-text {
+padding-left: 15px;
+display: inline-block;
+}
+.cta-text h4 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 2px;
+}
+.cta-text span {
+color: #757575;
+font-size: 15px;
+}
+.footer-content {
+position: relative;
+z-index: 2;
+}
+.footer-pattern img {
+position: absolute;
+top: 0;
+left: 0;
+height: 330px;
+background-size: cover;
+background-position: 100% 100%;
+}
+.footer-logo {
+margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+margin-bottom: 14px;
+font-size: 14px;
+    color: #7e7e7e;
+line-height: 28px;
+}
+.footer-social-icon span {
+color: #fff;
+display: block;
+font-size: 20px;
+font-weight: 700;
+font-family: 'Poppins', sans-serif;
+margin-bottom: 20px;
+}
+.footer-social-icon a {
+color: #fff;
+font-size: 16px;
+margin-right: 15px;
+}
+.footer-social-icon i {
+height: 40px;
+width: 40px;
+text-align: center;
+line-height: 38px;
+border-radius: 50%;
+}
+.facebook-bg{
+background: #3B5998;
+}
+.twitter-bg{
+background: #55ACEE;
+}
+.google-bg{
+background: #DD4B39;
+}
+.footer-widget-heading h3 {
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+margin-bottom: 40px;
+position: relative;
+}
+.footer-widget-heading h3::before {
+content: "";
+position: absolute;
+left: 0;
+bottom: -15px;
+height: 2px;
+width: 50px;
+background: #ff5e14;
+}
+.footer-widget ul li {
+display: inline-block;
+float: left;
+width: 50%;
+margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+color: #ff5e14;
+}
+.footer-widget ul li a {
+color: #878787;
+text-transform: capitalize;
+}
+.subscribe-form {
+position: relative;
+overflow: hidden;
+}
+.subscribe-form input {
+width: 100%;
+padding: 14px 28px;
+background: #2E2E2E;
+border: 1px solid #2E2E2E;
+color: #fff;
+}
+.subscribe-form button {
+  position: absolute;
+  right: 0;
+  background: #ff5e14;
+  padding: 13px 20px;
+  border: 1px solid #ff5e14;
+  top: 0;
+}
+.subscribe-form button i {
+color: #fff;
+font-size: 22px;
+transform: rotate(-6deg);
+}
+.copyright-area{
+background: #202020;
+padding: 25px 0;
+}
+.copyright-text p {
+margin: 0;
+font-size: 14px;
+color: #878787;
+}
+.copyright-text p a{
+color: #ff5e14;
+}
+.footer-menu li {
+display: inline-block;
+margin-left: 20px;
+}
+.footer-menu li:hover a{
+color: #ff5e14;
+}
+.footer-menu li a {
+font-size: 14px;
+color: #878787;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ****************************************************** MY CART STYLE HERE ******************************************************************************************************* */
+
+.mycart-container{
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content: center;
+ overflow-x:auto;
+ /* position: fixed; */
+ text-align: center;
+ margin-top: 80px;
+}
+.mycart-header{
+ color: wheat;
+ text-align: center;
+ /* align-items: center; */
+ justify-content: center;
+ background-color: #111;
+ width: 100%;
+ display: flex;
+}
+.mycart-btn{
+ 
+ border: 1px solid crimson;
+ background: none;
+ color: black;
+ border-radius: 3px;
+ cursor: pointer;
+ padding: 5px 5px;
+ width: 100%;
+}
+.mycart-btn:hover{
+ background: crimson;
+ color: wheat;
+}
+.mycart-buynowBtn{
+ border: none;
+ background-color: orange;
+ color: white;
+cursor: pointer;
+ padding: 10px 45px;
+}
+
+.table{
+ border-bottom: 1px solid wheat;
+ border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+
+
+}
+.text-center th{
+/* border-bottom: 1px solid wheat; */
+text-align: center;
+color: #333;
+
+}
+th, td {
+ text-align: left;
+  padding: 8px;
+
+}
+input{
+ text-align: center;
+ color: black;
+ 
+}
+
+
+
